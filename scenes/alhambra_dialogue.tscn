@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqs6id4wdxivg"]
+
+[ext_resource type="PackedScene" uid="uid://cxcryj6mjpsge" path="res://scenes/scenarios/scene_alhambra.tscn" id="1_kn55w"]
+
+[node name="Movie1" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_kn55w")]
