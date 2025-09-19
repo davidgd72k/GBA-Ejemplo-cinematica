@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GBA Ejemplo cinematica"
-run/main_scene="uid://nk54ih0hdy7j"
+run/main_scene="uid://bqs6id4wdxivg"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
