@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2237wh1j7q6"
-path="res://.godot/imported/itg_schizo_doodles.jpg-7a47727b23cbe4bc2df1aa567fc0095d.ctex"
+path="res://.godot/imported/sit_schizo_doodles.jpg-a0c43fca5bf90a248b4fb6609ad63642.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/items/itg_schizo_doodles.jpg"
-dest_files=["res://.godot/imported/itg_schizo_doodles.jpg-7a47727b23cbe4bc2df1aa567fc0095d.ctex"]
+source_file="res://assets/img/screen-items/sit_schizo_doodles.jpg"
+dest_files=["res://.godot/imported/sit_schizo_doodles.jpg-a0c43fca5bf90a248b4fb6609ad63642.ctex"]
 
 [params]
 
