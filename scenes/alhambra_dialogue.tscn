@@ -5,3 +5,10 @@
 [node name="Movie1" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_kn55w")]
+layer = -1
+
+[node name="CharaA" type="Sprite2D" parent="."]
+position = Vector2(116, 461)
+
+[node name="CharaB" type="Sprite2D" parent="."]
+position = Vector2(789, 475)
