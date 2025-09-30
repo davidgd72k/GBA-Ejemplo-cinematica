@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqs6id4wdxivg"]
+[gd_scene load_steps=3 format=3 uid="uid://bqs6id4wdxivg"]
 
 [ext_resource type="PackedScene" uid="uid://cxcryj6mjpsge" path="res://scenes/scenarios/scene_alhambra.tscn" id="1_kn55w"]
+[ext_resource type="Texture2D" uid="uid://dxqkcgp12nk0i" path="res://assets/img/characters/roy_face.png" id="2_sd5tm"]
 
 [node name="Movie1" type="Node2D"]
 
@@ -8,7 +9,12 @@
 layer = -1
 
 [node name="CharaA" type="Sprite2D" parent="."]
-position = Vector2(116, 461)
+position = Vector2(159, 506)
+scale = Vector2(2, 2)
+texture = ExtResource("2_sd5tm")
+flip_h = true
 
 [node name="CharaB" type="Sprite2D" parent="."]
-position = Vector2(789, 475)
+position = Vector2(783, 502)
+scale = Vector2(2, 2)
+texture = ExtResource("2_sd5tm")
