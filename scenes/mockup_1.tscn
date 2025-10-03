@@ -1,0 +1,106 @@
+[gd_scene load_steps=4 format=3 uid="uid://b71hdqwns72p0"]
+
+[ext_resource type="PackedScene" uid="uid://cxcryj6mjpsge" path="res://scenes/scenarios/scene_alhambra.tscn" id="1_afsxx"]
+[ext_resource type="Texture2D" uid="uid://dxqkcgp12nk0i" path="res://assets/img/characters/roy_face.png" id="2_8vvwd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_afsxx"]
+font_size = 24
+outline_size = 6
+outline_color = Color(0.34854388, 0.6544187, 0.12431454, 1)
+
+[node name="Mockup1" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_afsxx")]
+layer = -1
+
+[node name="CharaA" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(154, 535)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8vvwd")
+flip_h = true
+
+[node name="CharaB" type="Sprite2D" parent="."]
+position = Vector2(806, 533)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8vvwd")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DialogBalloon" type="Panel" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 84.0
+offset_right = -19.0
+offset_bottom = -226.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogText" type="RichTextLabel" parent="UI/DialogBalloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 15.0
+offset_right = -14.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Los [shake][rainbow]MALVADOS MENTIROSOS[/rainbow][/shake] [color=red]han vuelto[/color]"
+
+[node name="Control" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 23.0
+offset_top = 29.0
+offset_bottom = 80.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Control"]
+clip_contents = true
+layout_mode = 0
+offset_right = 915.0
+offset_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="CharaABalloon" type="Panel" parent="UI/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="UI/Control/HBoxContainer/CharaABalloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHARA A"
+label_settings = SubResource("LabelSettings_afsxx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharaBBalloon" type="Panel" parent="UI/Control/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="UI/Control/HBoxContainer/CharaBBalloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHARA B"
+label_settings = SubResource("LabelSettings_afsxx")
+horizontal_alignment = 1
+vertical_alignment = 1
