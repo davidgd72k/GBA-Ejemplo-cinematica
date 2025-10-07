@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=3 uid="uid://7ilsywq8dadu"]
+
+[ext_resource type="Script" uid="uid://dbn24l7x6uirk" path="res://entities/dialogue_balloon.gd" id="1_xcc8j"]
+
+[node name="DialogueBalloon" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xcc8j")
+
+[node name="MainDialogue" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 85.0
+offset_right = -25.0
+offset_bottom = -266.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MainDialogue"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 15.0
+offset_right = -18.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "ASAFADFAadfasfa"
+
+[node name="CharaHeaders" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 27.0
+offset_top = 13.0
+offset_right = -27.0
+offset_bottom = 81.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="CharaABalloon" type="Panel" parent="CharaHeaders"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CharaHeaders/CharaABalloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHARA A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharaBBalloon" type="Panel" parent="CharaHeaders"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CharaHeaders/CharaBBalloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHARA B"
+horizontal_alignment = 1
+vertical_alignment = 1

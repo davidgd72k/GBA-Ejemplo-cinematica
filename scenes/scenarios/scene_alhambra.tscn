@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cxcryj6mjpsge"]
 
-[ext_resource type="Script" uid="uid://bfoynpcwgjo1f" path="res://managers/background_manager.gd" id="1_33yrk"]
+[ext_resource type="Script" uid="uid://bfoynpcwgjo1f" path="res://controller/background_controller.gd" id="1_33yrk"]
 [ext_resource type="Shader" uid="uid://dy0ivy2xcikus" path="res://shaders/bg_fog.gdshader" id="1_avusm"]
 [ext_resource type="Texture2D" uid="uid://cteecgtxbq8e" path="res://assets/img/backgrounds/bg_inner_alhambra_palace_opti.jpg" id="2_33yrk"]
 
@@ -12,7 +12,7 @@ shader_parameter/mix_level = 0.65999998524768
 [node name="Background" type="CanvasLayer"]
 script = ExtResource("1_33yrk")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Texture" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_gu4q8")
 anchors_preset = 15
 anchor_right = 1.0
